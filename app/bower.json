@@ -17,7 +17,6 @@
   ],
   "dependencies": {
     "angular": "~1.4.7",
-    "backbone": "~1.2.3",
     "html5-boilerplate": "~5.2.0",
     "bootstrap": "~3.3.5"
   }
