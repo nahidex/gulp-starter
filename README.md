@@ -1,5 +1,6 @@
 #gulp-starter
 A gulp starter kit with minimal amount of resources.
+- Html5 Boilerplate
 - Gulp
 - Sass
 - Uglify
