@@ -5,6 +5,7 @@ A gulp starter kit with minimal amount of resources.
 - Uglify
 - Bootstrap
 - Angular
+- BrowserSync
 
 
 For ready front end workflow those are required.
