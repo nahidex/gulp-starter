@@ -1,11 +1,58 @@
-$white:#fff;
-* {
-	margin: 0;
-	padding: 0;
-}
+/*MAIN.SCSS*/
+/*-------------------------------------------------------------------------------------------------------------------------------*/
+/*This is main CSS file that contains custom style rules used in this template*/
+/*-------------------------------------------------------------------------------------------------------------------------------*/
+/* Template Name: Tempalte Name.*/
+/* Version: 1.0 Initial Release*/
+/* Build Date: 11-06-2016*/
+/* Author: Habibullah Nahid.*/
+/* Website: http://themewave.net/
+/* Copyright: (C) 2016 */
+/*-------------------------------------------------------------------------------------------------------------------------------*/
+/*--------------------------------------------------------*/
+/* TABLE OF CONTENTS: */
+/*--------------------------------------------------------*/
+/* 01 - HELPERS */
+/* 02 - VENDORS */
+/* 03 - BASE */
+/* 04 - LAYOUTS */
+/* 05 - COMPONENTS */
+/* 06 - PAGES */
+/* 07 - THEMES */
+/*-------------------------------------------------------------------------------------------------------------------------------*/
 
-body{
-	font-family: "Arial", sans-serif;
-	color:#000;
-	
-}
+// 1. Helpers 
+@import 'helpers/variables';
+@import 'helpers/functions';
+@import 'helpers/mixins';
+
+// 2.Vendors
+@import 'vendors/bootstrap';
+
+// 3.Base
+@import 'base/reset';
+@import 'base/typography';
+@import 'base/color';
+
+// 4.Layouts
+@import 'layout/grid';
+@import 'layout/header';
+@import 'layout/footer';
+@import 'layout/sidebar';
+@import 'layout/navigation';
+
+
+// 5.Components
+@import 'components/buttons';
+@import 'components/dropdown';
+@import 'components/gallery';
+@import 'components/forms';
+
+// 6.Pages
+@import 'pages/home';
+@import 'pages/about';
+@import 'pages/contact';
+
+// 7.Themes
+@import 'themes/theme';
+@import 'themes/admin';
