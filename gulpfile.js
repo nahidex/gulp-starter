@@ -8,7 +8,8 @@ var gulp = require('gulp'),
 	reload = browserSync.reload,
 	sass = require('gulp-sass'),
 	autoprefixer = require('gulp-autoprefixer'),
-	rename = require('gulp-rename');
+	rename = require('gulp-rename'),
+	styledown = require('gulp-styledown');
 
 /***********************************************************
 /*		Styles Task
@@ -39,6 +40,14 @@ gulp.task('html', function(){
 	.pipe(reload({stream:true}));
 });
 
+gulp.task('styledown', function() {
+	gulp.src('css/main.css')
+	.pipe(styledown({
+	  config: 'config/config.md',
+	  filename: 'styledown.html'
+	}))
+	.pipe(gulp.dest('docs'));
+});
 /***********************************************************
 /*		Browser-Sync Tasks
 /***********************************************************/
